@@ -8,6 +8,7 @@ const refs = {
     search: document.querySelector('.search-thumb'),
     searchForm: document.querySelector('.search-form'),
     openFieldSearch: document.querySelector('.js-icon-open-field')
+
 }
 
 refs.menu.addEventListener('click', onClickMenu);
@@ -18,6 +19,7 @@ function onClickMenu() {
     modal.classList.toggle('is-hidden');
     search.classList.toggle('is-hidden');
     body.style.overflow = 'hidden';
+    body.style.pointerEvents = 'none'
 };
 
 refs.openFieldSearch.addEventListener('click', onSearchClick);
