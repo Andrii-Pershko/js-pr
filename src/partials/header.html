@@ -1,17 +1,23 @@
 <header>
-  <div class="container">
-    <h1>News</h1>
+  <div class="container header">
+    <h1><a href="../src/index.html">News</a></h1>
     <nav class="navigation">
       <ul class="navigation-list">
-        <li class="navigation_items">Home</li>
-        <li class="navigation_items">Favorite</li>
-        <li class="navigation_items">Read</li>
+        <li class="navigation_items"><a href="./index.html">Home</a></li>
+        <li class="navigation_items"><a href="./favorite.html">Favorite</a></li>
+        <li class="navigation_items"><a href="./read.html">Read</a></li>
       </ul>
     </nav>
-    <form>
-      <input type="text" id="name" placeholder="Search" />
-    </form>
-    <form>
+    <div class="search-thumb">
+      <form class="search-form">
+        <svg class="js-icon-open-field" width="20" height="20">
+          <use href="./images/header.svg#search"></use>
+        </svg>
+        <input type="text" id="search-area" placeholder="Search" />
+      </form>
+    </div>
+
+    <form class="switch">
       <label>
         <input type="radio" name="theme" value="light" />
         light
@@ -21,5 +27,6 @@
         dark
       </label>
     </form>
+    <div class="menu-thumb"><div class="menu-open"></div></div>
   </div>
 </header>

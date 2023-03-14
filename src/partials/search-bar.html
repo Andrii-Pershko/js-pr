@@ -1,15 +1,25 @@
 <section>
   <div class="container search-bar">
-    <ul class="search-bar_list">
-      <li class="search-bar_items"><button class="button">Admin</button></li>
-      <li class="search-bar_items"><button class="button">Arts</button></li>
-      <li class="search-bar_items">
+    <ul class="search-bar_list-filter">
+      <li class="search-bar_items-filter">
+        <button class="button">Admin</button>
+      </li>
+      <li class="search-bar_items-filter">
+        <button class="button">Arts</button>
+      </li>
+      <li class="search-bar_items-filter">
         <button class="button">Automobiles</button>
       </li>
-      <li class="search-bar_items"><button class="button">Books</button></li>
-      <li class="search-bar_items"><button class="button">Briefing</button></li>
-      <li class="search-bar_items"><button class="button">Business</button></li>
-      <li class="search-bar_items">
+      <li class="search-bar_items-filter">
+        <button class="button">Books</button>
+      </li>
+      <li class="search-bar_items-filter">
+        <button class="button">Briefing</button>
+      </li>
+      <li class="search-bar_items-filter">
+        <button class="button">Business</button>
+      </li>
+      <li class="search-bar_items-filter">
         <div class="dropdown">
           <button class="dropbtn button">Dropdown</button>
           <ul>
@@ -30,11 +40,22 @@
         </div>
       </li>
     </ul>
-    <div class="weather">
+    <div class="date">
       <h3>Search date news</h3>
-      <form>
-        <input type="text" placeholder="Сhoose a date" />
-      </form>
+      <input
+        type="text"
+        id="datetime-picker"
+        class="flatpickr-input"
+        readonly="readonly"
+      />
     </div>
+    <ul class="search-bar_list-news">
+      <li class="search-bar_list-news_news"></li>
+      <li class="search-bar_list-news_news weather" style="order: 3"></li>
+    </ul>
+    <ul class="paginations">
+      <li>1</li>
+    </ul>
+    <include src="./partials/not-found.html"></include>
   </div>
 </section>

@@ -1,12 +1,12 @@
 :root {
   --desktop: 1280px;
   --tablet: 768px;
-  --mobile: 480px;
+  --mobile: 767px;
 }
 
 $desktop: 1280px;
 $tablet: 768px;
-$mobile: 480px;
+$mobile: 767px;
 
 @mixin desktop {
   @media screen and (min-width: $desktop) {
@@ -21,7 +21,7 @@ $mobile: 480px;
 }
 
 @mixin mobile {
-  @media screen and (min-width: $mobile) {
+  @media screen and (max-width: $mobile) {
     @content;
   }
 }

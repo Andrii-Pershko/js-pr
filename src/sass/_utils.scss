@@ -1,0 +1,30 @@
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.5s;
+}
+
+.shhafle {
+  transform: translate(0);
+  transition: all 0.5s;
+}
+
+.shhafle-thumb {
+  border: 1px solid black;
+  transform: translate(0);
+  transition: 0.5s;
+}
